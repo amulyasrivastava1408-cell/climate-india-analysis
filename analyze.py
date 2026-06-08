@@ -40,4 +40,4 @@ print(df["AQI_Category"].value_counts(normalize=True) * 100)  # as percentage
 df.groupby("City")["AQI"].mean()                          # avg AQI per city
 df.groupby("City")["Rainfall (mm)"].sum()                 # total rainfall per city
 df.groupby(["City", "Season"])["Temperature_Avg (°C)"].mean()   # two-level groupby
-df.groupby("Month")["AQI"].mean().sort_index()            # monthly t
+df.groupby("Month")["AQI"].mean().sort_index()            # monthly trend
